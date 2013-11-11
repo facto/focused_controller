@@ -9,7 +9,7 @@ module FocusedController
 
     def render_to_body(options = {})
       _process_options(options)
-      @_render_options = options
+      @_render_options = options || {}
     end
 
     def url_for(options = nil)
